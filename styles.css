@@ -1,0 +1,167 @@
+
+
+/************************************************/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Arial,sans-serif;
+    background-color:#f5f5f5;
+}
+/************************************************/
+
+.a4{
+
+    width: 210mm; /* A4 width in millimeters */
+    height: 297mm; /* A4 height in millimeters */
+    margin: auto; /* Centering the paper on the page */
+    margin:auto;
+    padding: 20mm;
+    background-color:white;
+    border: 1px solid #ddd;
+    border-image:none;
+    box-shadow: 0 0 5mm rgba(0,0,0,.1);
+    font-family: Arial, sans-serif;
+
+
+
+}
+
+/************************************************/
+.header{
+
+    text-align: center;
+}
+
+.logo{
+
+    width:200px;
+    height: auto;
+    margin-right: 6.25in;
+}
+
+/************************************************/
+.header-text{
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 2px;
+
+}
+.right-date{
+position: absolute;
+right: 0;
+}
+
+/************************************************/
+.line{
+    margin: 29px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/***********************************************/
+
+h1{
+    text-align: center;
+    margin: 52px 0;
+    font-size: 25px;
+}
+
+/************************************************/
+.content{
+    margin-left:0;
+    margin-bottom:.520833333in;
+    margin-top:.520833333in;
+    font-size:1.125pc;
+}
+/************************************************/
+.right{
+    margin-left:auto;
+}
+/************************************************/
+.line-0,.line-3{
+    display: flex;
+    justify-content: left;
+    margin: 29px 50px 0 0;
+    
+}
+/************************************************/
+.footer{
+
+    margin-right: 50px 0;
+    font-size: 18px;
+}
+
+/***************************************************/
+.button-container{
+
+    
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: center;
+
+
+    
+}
+/*************************************************/
+
+button{
+    
+    padding:10px 20px;
+    margin:.10px;
+    border-style:none;
+    border-width: 16px;
+    font-size: 16px; 
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/*************************************************************/
+#print-button{
+
+    color: white;
+    background-color: #4caf50;
+}
+#print-button:hover{
+    background-color: #439b48;
+}
+/************************************************************/
+
+#retour-button{
+    color:white;
+    background-color:#f44336;
+}
+#retour-button:hover{
+    
+    background-color:#da3d32;
+
+
+}
+
+
+@media print {
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .a4 {
+        width: 210mm;
+        height: 297mm;
+        margin: auto;
+        padding: 20mm;
+        background-color: white;
+        box-shadow: none;
+    }
+
+    .button-container {
+        display: none;
+    }
+}
